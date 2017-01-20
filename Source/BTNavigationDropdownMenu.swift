@@ -464,7 +464,7 @@ open class BTNavigationDropdownMenu: UIView {
         self.menuTitle.text = title
     }
     
-    func open updateMenuTitle(title: String) {
+    open func updateMenuTitle(title: String) {
         self?.setMenuTitle(title)
         self?.layoutSubviews()
     }
