@@ -464,6 +464,11 @@ public class BTNavigationDropdownMenu: UIView {
         self.menuTitle.text = title
     }
     
+    func open updateMenuTitle(title: String) {
+        self?.setMenuTitle(title)
+        self?.layoutSubviews()
+    }
+    
     func menuButtonTapped(sender: UIButton) {
         self.isShown == true ? hideMenu() : showMenu()
     }
